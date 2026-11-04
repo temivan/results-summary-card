@@ -34,6 +34,6 @@ function gradeFor(totalScore: number): Grade {
 /** Derives the Total score and Grade from the Result data. */
 export function summarise(result: Result): ResultSummary {
   const sum = result.reduce((total, { score }) => total + score, 0)
-  const totalScore = result.length === 0 ? 0 : Math.round(sum / result.length)
+  const totalScore = Math.round(sum / result.length)
   return { totalScore, grade: gradeFor(totalScore) }
 }
