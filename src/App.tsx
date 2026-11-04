@@ -3,7 +3,7 @@ import { result } from './result.ts'
 
 export default function App() {
   return (
-    <main className="md:grid md:min-h-dvh md:place-items-center md:px-10">
+    <main className="md:grid md:min-h-dvh md:place-items-center md:px-[2.5625rem]">
       <ResultsCard result={result} />
     </main>
   )
