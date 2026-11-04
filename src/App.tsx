@@ -1,9 +1,10 @@
+import { ResultsCard } from './components/ResultsCard.tsx'
+import { result } from './result.ts'
+
 export default function App() {
   return (
-    <main className="grid min-h-dvh place-items-center">
-      <article className="min-h-128 w-full max-w-184 bg-white shadow-card md:rounded-[32px]">
-        <h1 className="sr-only">Results summary</h1>
-      </article>
+    <main className="md:grid md:min-h-dvh md:place-items-center md:px-10">
+      <ResultsCard result={result} />
     </main>
   )
 }
