@@ -1,8 +1,11 @@
 import data from './data.json'
 
+/** The four tests taken, as named in the Result data. */
+export type CategoryName = 'Reaction' | 'Memory' | 'Verbal' | 'Visual'
+
 /** One row of the Result data: a Category and its Score out of 100. */
 export interface CategoryScore {
-  category: string
+  category: CategoryName
   score: number
   /** Path relative to the app's base URL, e.g. "./assets/images/icon-reaction.svg". */
   icon: string
@@ -18,7 +21,8 @@ export interface ResultSummary {
   grade: Grade
 }
 
-export const result: Result = data
+/* JSON imports widen `category` to string; the data file holds exactly the four Category names. */
+export const result = data as Result
 
 function gradeFor(totalScore: number): Grade {
   if (totalScore >= 90) return 'Excellent'

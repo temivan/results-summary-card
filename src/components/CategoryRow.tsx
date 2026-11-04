@@ -1,7 +1,7 @@
-import type { CategoryScore } from '../result.ts'
+import type { CategoryName, CategoryScore } from '../result.ts'
 
 /* Full class names so Tailwind can find them. Keyed by Category name. */
-const categoryClassNames: Record<string, string> = {
+const categoryClassNames: Record<CategoryName, string> = {
   Reaction: 'bg-red-50 text-red-400',
   Memory: 'bg-yellow-50 text-yellow-400',
   Verbal: 'bg-green-50 text-green-500',
@@ -13,7 +13,7 @@ interface CategoryRowProps {
 }
 
 export function CategoryRow({ categoryScore }: CategoryRowProps) {
-  const colours = categoryClassNames[categoryScore.category] ?? 'bg-navy-50 text-navy-950'
+  const colours = categoryClassNames[categoryScore.category]
 
   return (
     <li className={`flex min-h-14 items-center justify-between gap-4 rounded-xl p-4 ${colours}`}>
