@@ -8,7 +8,7 @@ interface ResultsCardProps {
 
 export function ResultsCard({ result }: ResultsCardProps) {
   return (
-    <article className="w-full bg-white md:grid md:min-h-128 md:max-w-184 md:grid-cols-2 md:rounded-[32px] md:shadow-card">
+    <article className="w-full bg-white md:grid md:min-h-128 md:max-w-184 md:grid-cols-2 md:rounded-card md:shadow-card">
       <h1 className="sr-only">Results summary</h1>
       <ResultPanel summary={summarise(result)} />
       <SummaryPanel result={result} />

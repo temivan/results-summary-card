@@ -68,6 +68,8 @@
   --spacing-200: 1rem;
   --spacing-400: 2rem;
 
+  --radius-card: 2rem;
+
   /* Figma effect "1": drop shadow #3D6CEC26, offset (0, 30), blur 60. */
   --shadow-card: 0 30px 60px rgb(61 108 236 / 0.15);
 }

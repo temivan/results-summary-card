@@ -16,8 +16,10 @@ export function CategoryRow({ categoryScore }: CategoryRowProps) {
   const colours = categoryClassNames[categoryScore.category]
 
   return (
-    <li className={`flex min-h-14 items-center justify-between gap-4 rounded-xl p-4 ${colours}`}>
-      <span className="flex items-center gap-4">
+    <li
+      className={`flex min-h-14 items-center justify-between gap-200 rounded-xl p-200 ${colours}`}
+    >
+      <span className="flex items-center gap-200">
         <img
           src={`${import.meta.env.BASE_URL}${categoryScore.icon}`}
           alt=""
