@@ -1,0 +1,14 @@
+# Design files (Frontend Mentor asks not to share them)
+*.fig
+*.sketch
+*.xd
+
+node_modules/
+dist/
+coverage/
+*.local
+.DS_Store
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea
