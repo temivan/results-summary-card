@@ -5,5 +5,5 @@
   "sortTailwindcss": {
     "stylesheet": "./src/index.css"
   },
-  "ignorePatterns": ["pnpm-lock.yaml", "results-summary-component-main"]
+  "ignorePatterns": ["pnpm-lock.yaml"]
 }
