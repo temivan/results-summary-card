@@ -23,7 +23,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add Frontend Mentor solution URL here](https://www.frontendmentor.io/solutions/TODO)
+- Solution URL: [frontendmentor.io/solutions/results-summary-card-WmuET81XWi](https://www.frontendmentor.io/solutions/results-summary-card-WmuET81XWi)
 - Repository: [github.com/temivan/results-summary-card](https://github.com/temivan/results-summary-card)
 - Live Site URL: [temivan.github.io/results-summary-card](https://temivan.github.io/results-summary-card/)
 
